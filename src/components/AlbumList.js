@@ -14,8 +14,8 @@ const Albumlist = () => {
             }}
           />
           <View style={styles.headerContentStyle}>
-            <Text>{albumData[0].title}</Text>
-            <Text>{albumData[0].artist}</Text>
+            <Text style={styles.textStyle}>{albumData[0].title}</Text>
+            <Text style={styles.textStyle}>{albumData[0].artist}</Text>
           </View>
         </View>
         <View style={styles.cardSectionStyle}>
@@ -36,8 +36,8 @@ const Albumlist = () => {
             }}
           />
           <View style={styles.headerContentStyle}>
-            <Text>{albumData[1].title}</Text>
-            <Text>{albumData[1].artist}</Text>
+            <Text style={styles.textStyle}>{albumData[1].title}</Text>
+            <Text style={styles.textStyle}>{albumData[1].artist}</Text>
           </View>
         </View>
         <View style={styles.cardSectionStyle}>
@@ -58,8 +58,8 @@ const Albumlist = () => {
             }}
           />
           <View style={styles.headerContentStyle}>
-            <Text>{albumData[2].title}</Text>
-            <Text>{albumData[2].artist}</Text>
+            <Text style={styles.textStyle}>{albumData[2].title}</Text>
+            <Text style={styles.textStyle}>{albumData[2].artist}</Text>
           </View>
         </View>
         <View style={styles.cardSectionStyle}>
@@ -80,8 +80,8 @@ const Albumlist = () => {
             }}
           />
           <View style={styles.headerContentStyle}>
-            <Text>{albumData[3].title}</Text>
-            <Text>{albumData[3].artist}</Text>
+            <Text style={styles.textStyle}>{albumData[3].title}</Text>
+            <Text style={styles.textStyle}>{albumData[3].artist}</Text>
           </View>
         </View>
         <View style={styles.cardSectionStyle}>
@@ -102,8 +102,8 @@ const Albumlist = () => {
             }}
           />
           <View style={styles.headerContentStyle}>
-            <Text>{albumData[4].title}</Text>
-            <Text>{albumData[4].artist}</Text>
+            <Text style={styles.textStyle}>{albumData[4].title}</Text>
+            <Text style={styles.textStyle}>{albumData[4].artist}</Text>
           </View>
         </View>
         <View style={styles.cardSectionStyle}>
@@ -132,13 +132,13 @@ const styles = StyleSheet.create({
   headerContentStyle: {
     flexDirection: "column",
     justifyContent: "space-around",
-    paddingLeft: 10
+    paddingLeft: 10,
   },
   cardContainerStyle: {
-    borderWidth: 1,
+    borderWidth: 2,
     borderRadius: 2,
-    borderColor: "#ddd",
-    shadowColor: "#000",
+    borderColor: "lightblue",
+    shadowColor: "#fff",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 2,
@@ -149,13 +149,17 @@ const styles = StyleSheet.create({
   },
   cardSectionStyle: {
     padding: 5,
-    backgroundColor: "#fff",
-    borderColor: "#ddd",
+    backgroundColor: "#000",
+    borderColor: "lightblue",
     borderBottomWidth: 1
   },
   imageStyle: {
     height: 380,
     width: null
+  },
+  textStyle: {
+    color: '#fff',
+    fontSize: 18
   }
 });
 
